@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Overpass:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+		padding:0px;
+		margin:0px;
+		box-sizing:border-box;
+}
+
+body{
+        
+		overflow: scroll;
+        padding:40px 10%;
+		font-family:'inter', sans-serif;
+}
+
+ /* navigation menu started here */
+nav.container{ 
+		display:flex;
+		justify-content:space-between;	
+		
+}
+
+.right-nav{
+		display:flex;
+		gap:30px;
+		flex-wrap:wrap;		
+}
+
+.right-nav a {
+		text-decoration:none;
+		color:gray;				
+		font-family:'inter', sans-serif;
+}
+
+.right-nav a:hover {
+		color:hsl(5, 85%, 63%);	
+}
+
+
+
+/* hero section start here */
+
+
+.Hero-section {
+	    display:flex;
+		gap:14px;
+	    padding-top:7px;	
+        height:439px;		
+}
+
+.Left-Hero-section-article{
+	    display:flex;
+	    margin-top:12px;
+	    width:100%;
+}
+
+
+
+.Left-Hero-section img{
+       width:100%;
+
+}
+.Left-Hero-section-article2{
+	   width:70%;
+	   margin-left:170px;
+	  
+}
+
+.Left-Hero-section-article2 p{
+	   font-size:12px;
+	   font-family:'inter', sans-serif;
+	   line-height:20px;
+}
+
+
+.Left-Hero-section-article1{
+	   
+	   line-height:39px;
+	   font-weight:170px;
+	   font-size:23px;
+	   font-family:'inter', sans-serif;
+	   width:39%;
+	   word-spacing:10px;
+		
+}
+	  
+
+button{
+		margin-top:20px;
+		padding:10px;
+		width:150px;
+		background-color:hsl(5, 85%, 63%);	
+		border:none;
+		color:white;
+		font-family:'inter', sans-serif;
+}
+
+
+button:hover{
+	    background-color:hsl(240, 100%, 5%);
+	
+}
+
+.Right-Hero-section{
+		background-color:hsl(240, 100%, 5%);
+		padding:19px 20px 0px 20px;
+		width:60%;
+}
+
+.articles{
+		display:flex;
+		flex-direction:column;		
+}
+
+article > *{
+	display:flex;
+	    flex-shrink:0;
+		color:hsl(236, 13%, 42%);
+		margin: 20px 0;
+		font-family:'inter', sans-serif;
+}
+
+article h4{
+		font-size:12px;
+		color:hsl(36, 100%, 99%); !important
+		font-family:'inter', sans-serif;
+}
+
+article p{
+	   flex-shrink:0;
+	   font-size:12px;
+	   font-family:'inter', sans-serif;
+	   line-height:20px;
+}
+
+
+article h4:hover{
+		color:hsl(5, 85%, 63%);
+		cursor:pointer;
+}
+
+
+.Right-Hero-section h1{
+		font-size:29px;
+		color:hsl(35, 77%, 62%); 
+		font-family:'inter', sans-serif;	
+}
+
+
+.middle-article{
+		border-bottom:1px solid gray;
+		border-top: 1px solid gray;
+		padding:7px 0;  	
+}
+
+
+/* blog section start */
+
+.blog {
+		display:flex;
+		margin-top:40px;
+		justify-content:space-between;
+	
+}
+ .sub_blog{
+		display:flex;
+		width:30%;
+		font-size:14px;
+		line-height:1.4;
+		
+}
+
+.sub_blog img{
+	    height:92px;
+}
+
+.sub_blog div{
+	   margin-left:10px;
+	  
+	
+}
+
+.sub_blog h1,p{
+       color:hsl(236, 13%, 42%);
+	   font-family:'inter', sans-serif;
+}
+
+.sub_blog h3{
+	   font-family:'inter', sans-serif;
+}
+
+.sub_blog h3:hover{
+		color:hsl(5, 85%, 63%);
+		cursor:pointer;	
+}
+
+ /* mobile view only start */
+.sidebar{
+	   display:none;
+	   flex-direction:column;
+	   background-color:white;
+	   position:fixed;
+	   top:0px;
+	   right:0;
+	   height:100vh; 
+	   width:250px;
+	   text-align:center;
+	   z-index:999;
+	  	/* font-family:'inter', sans-serif; */
+}
+
+.sidebar a{
+	display:flex;
+	color:black;
+	font-weight:500;
+	font-size:22px;
+	   text-decoration:none;
+	   padding:20px;
+	   width:100%;
+	   color:black; 	
+	   
+}
+
+.sidebar a svg{
+  margin-left:170px;
+  margin-bottom:40px;
+ 
+	   
+}
+.sidebar a:hover{
+	   background-color:gray;
+}
+
+/* this is for hamburger */
+#menu, 
+.onmobile{
+	  display:none;
+ } 
+
+
+/* responsiveness starts */
+
+@media  (max-width: 768px) {
+	
+	.Hero-section {
+	    display:flex;
+		flex-direction:column;
+		width:100%;
+		align-items:center;
+		height:100%;
+
+	}
+	
+
+.Left-Hero-section{
+		display:flex;
+		flex-direction:column;
+		
+}
+	
+	.Left-Hero-section-article {
+	    display:flex;
+		flex-direction:column;
+		justify-content:center;
+		gap:10px;
+}
+ 
+ .Left-Hero-section-article1{
+		display:flex;
+		font-weight:bold;
+		font-size:21px;
+		line-height:39px;
+		font-family:'inter', sans-serif;
+		width:99%;
+        text-align:left;	
+        
+} 
+
+.Left-Hero-section-article2{
+		 display:flex;
+		 flex-direction:column;
+		 width:100%; 
+		 text-align:left;	
+		 margin-left:0px;
+		 align-items:left;		
+}
+	
+
+.Right-Hero-section{
+	     width:100%;
+	     margin-top:20px;
+}
+
+.Right-Hero-section h4{
+	     font-size:18px;
+}
+
+.Right-Hero-section h1{
+	     font-size:39px;
+}
+
+.Right-Hero-section p{
+	     width:100%;
+	     font-size:19px;
+}
+
+
+.blog{
+	    display:flex;
+		flex-direction:column;
+		width:100%;
+		gap:20px;	
+		overflow:hidden;
+	}
+ 
+
+.blog .sub_blog{
+		display:flex;
+		width:100%;
+}
+
+/* this is for hide and seek on mobile  */
+
+
+ #menu,
+.onmobile{
+	   display:block;
+}	  
+
+	  /* this is for hide and seek on destop for nav */
+	  
+ #hideNave,
+.ondesktop{
+		  display:none;
+ }
+ 
+  /* this is for mobile vertical nav controller which is "flex" to work */
+ .sidebar{
+	 display:none;
+	 
+ }
+ 
+}
